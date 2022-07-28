@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* nav {
+    height: 55px;
+    background: #F55A5A;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.4608px;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+} */
+
+.sidebarWrapper {
+  padding: 20px;
+}
+
+.list {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    border: 1px solid #ccc;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    display: inline-block;
+  }
+
+.image{
+    width: 125px;
+    height: 168px;
+    border-radius: 5px;
+}
+
+.cardsngraphs{
+    display: flex;
+    width: 100%;
+    
+}
+
+
+.allcards{
+    
+    /* background: rgb(179, 132, 132); */
+    width: 600px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    margin: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+background-color: rgb(179, 179, 179);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    height: 168px;
+    display: flex;
+    flex-direction: row;
+    background: pink;
+    border-radius: 5px;
+    margin: 15px 15px;
+    position: sticky;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.one{
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+    color: #2B283A;
+}
+
+.two{
+    
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #2B283A;
+}
+
+
+.three{
+    font-weight: 700;
+    font-size: 10.24px;
+    line-height: 12px;
+
+    color: #2B283A;
+    
+}
+
+.four{
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+    /* or 15px */
+    color: #2B283A;
+}
+
+.flex{
+    background: gray;
+    padding: 4px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+box{
+    width: 10px;
+    
+}

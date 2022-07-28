@@ -1,0 +1,45 @@
+.searchContainer{
+    display: flex;
+    width: 100%;
+}
+.search{
+    /* background-image: url('/images/city2.png'); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* section{
+    background: rgb(179, 132, 132);
+    width: 600px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+} */
+
+
+/* filter{
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    background: gray;
+    border-bottom: 1px;
+    border-color: gainsboro;
+    padding: 2px;
+    font-weight: bold;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* .topbar{
+    display: flex;
+    width: 100%;
+    background: black;
+
+} */
