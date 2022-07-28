@@ -14,6 +14,7 @@ import java.util.Optional;
 public class PropertiesController {
 
     private final PropertiesService propertiesService;
+    private final AvgPriceYearService avgPriceYearService;
     @GetMapping("/properties/by")
     public Optional<List<Property>> get_property_data(@RequestParam(required = false) String state,
                                                       @RequestParam(required = false) Integer zip_code,
@@ -54,5 +55,10 @@ public class PropertiesController {
     @GetMapping("/aggregations/statewisepropertycounts")
     public List<StateWiseProperties> getStateWisePropreties(){
         return propertiesService.getSWP();
+    }
+
+    @GetMapping("/aggregations/averagepriceperyear")
+    public List<AvgPriceYear> getAvgPricePerYear(){
+        return avgPriceYearService.getAPY();
     }
 }

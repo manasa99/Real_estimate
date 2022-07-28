@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.repository.Aggregation;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
-
+ 
 import java.util.List;
 
 @Repository
@@ -39,6 +39,7 @@ public interface PropertiesRepository extends MongoRepository<Property, String> 
 
     List<Property> findAllByStateIgnoreCase(String state);
 
+
     @Query(value = "db.properties.distinct(\"city\")",fields = "{city: 1,_id:0}")
     List<City> getallcities();
 
@@ -50,4 +51,5 @@ public interface PropertiesRepository extends MongoRepository<Property, String> 
 
     @Aggregation(pipeline = "{'$group':{'_id': '$state', 'count': {'$sum': 1}}}")
     List<StateWiseProperties> getStateIgnoreCaseWiseProperties();
-}
+
+    }

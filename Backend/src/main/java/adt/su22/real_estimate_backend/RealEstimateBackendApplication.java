@@ -12,7 +12,8 @@ import org.springframework.core.env.Environment;
 @SpringBootApplication(exclude = {
         SecurityAutoConfiguration.class,
         VaultAutoConfiguration.class,
-        ManagementWebSecurityAutoConfiguration.class
+        ManagementWebSecurityAutoConfiguration.class,
+        RedisAutoConfiguration.class
 }
 )
 public class RealEstimateBackendApplication {
